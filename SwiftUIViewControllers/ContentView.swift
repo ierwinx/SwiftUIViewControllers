@@ -1,19 +1,29 @@
-//
-//  ContentView.swift
-//  SwiftUIViewControllers
-//
-//  Created by Erwin Luz León on 31/10/22.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var bShow = false
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            MiVistaBridge()
+                .frame(height: 200)
+            
+            Spacer()
+                .frame(height: 100)
+            
+            Button("Mostar") {
+                bShow.toggle()
+            }
+            .padding(15)
+            .padding([.trailing, .leading], 40)
+            .background(.red)
+            .tint(.white)
+            
+            .fullScreenCover(isPresented: $bShow) {
+                UKitBridge()
+            }
         }
         .padding()
     }

@@ -11,6 +11,13 @@
 		AAD1E72D29102F60009ED629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD1E72C29102F60009ED629 /* ContentView.swift */; };
 		AAD1E72F29102F61009ED629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD1E72E29102F61009ED629 /* Assets.xcassets */; };
 		AAD1E73229102F61009ED629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD1E73129102F61009ED629 /* Preview Assets.xcassets */; };
+		AAF811FE291038A5008C86B2 /* MiVistaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF811FC291038A5008C86B2 /* MiVistaViewController.swift */; };
+		AAF811FF291038A5008C86B2 /* MiVistaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAF811FD291038A5008C86B2 /* MiVistaViewController.xib */; };
+		AAF8120129103B28008C86B2 /* UKitBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8120029103B28008C86B2 /* UKitBridge.swift */; };
+		AAF8120329103BFA008C86B2 /* MiVistaProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8120229103BFA008C86B2 /* MiVistaProtocol.swift */; };
+		AAF8120B29104676008C86B2 /* MiVistaBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8120A29104676008C86B2 /* MiVistaBridge.swift */; };
+		AAF8121229104AF4008C86B2 /* MiVista.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8121029104AF4008C86B2 /* MiVista.swift */; };
+		AAF8121329104AF4008C86B2 /* MiVista.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAF8121129104AF4008C86B2 /* MiVista.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		AAD1E72C29102F60009ED629 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AAD1E72E29102F61009ED629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAD1E73129102F61009ED629 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAF811FC291038A5008C86B2 /* MiVistaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiVistaViewController.swift; sourceTree = "<group>"; };
+		AAF811FD291038A5008C86B2 /* MiVistaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiVistaViewController.xib; sourceTree = "<group>"; };
+		AAF8120029103B28008C86B2 /* UKitBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKitBridge.swift; sourceTree = "<group>"; };
+		AAF8120229103BFA008C86B2 /* MiVistaProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiVistaProtocol.swift; sourceTree = "<group>"; };
+		AAF8120A29104676008C86B2 /* MiVistaBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiVistaBridge.swift; sourceTree = "<group>"; };
+		AAF8121029104AF4008C86B2 /* MiVista.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiVista.swift; sourceTree = "<group>"; };
+		AAF8121129104AF4008C86B2 /* MiVista.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MiVista.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +65,10 @@
 		AAD1E72929102F60009ED629 /* SwiftUIViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AAF811FB29103888008C86B2 /* UKit */,
 				AAD1E72A29102F60009ED629 /* SwiftUIViewControllersApp.swift */,
+				AAF8120029103B28008C86B2 /* UKitBridge.swift */,
+				AAF8120A29104676008C86B2 /* MiVistaBridge.swift */,
 				AAD1E72C29102F60009ED629 /* ContentView.swift */,
 				AAD1E72E29102F61009ED629 /* Assets.xcassets */,
 				AAD1E73029102F61009ED629 /* Preview Content */,
@@ -65,6 +82,34 @@
 				AAD1E73129102F61009ED629 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AAF811FB29103888008C86B2 /* UKit */ = {
+			isa = PBXGroup;
+			children = (
+				AAF81205291044CC008C86B2 /* Vista */,
+				AAF81204291044C2008C86B2 /* Controller */,
+			);
+			path = UKit;
+			sourceTree = "<group>";
+		};
+		AAF81204291044C2008C86B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AAF811FC291038A5008C86B2 /* MiVistaViewController.swift */,
+				AAF811FD291038A5008C86B2 /* MiVistaViewController.xib */,
+				AAF8120229103BFA008C86B2 /* MiVistaProtocol.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AAF81205291044CC008C86B2 /* Vista */ = {
+			isa = PBXGroup;
+			children = (
+				AAF8121029104AF4008C86B2 /* MiVista.swift */,
+				AAF8121129104AF4008C86B2 /* MiVista.xib */,
+			);
+			path = Vista;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +171,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD1E73229102F61009ED629 /* Preview Assets.xcassets in Resources */,
+				AAF8121329104AF4008C86B2 /* MiVista.xib in Resources */,
+				AAF811FF291038A5008C86B2 /* MiVistaViewController.xib in Resources */,
 				AAD1E72F29102F61009ED629 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD1E72D29102F60009ED629 /* ContentView.swift in Sources */,
+				AAF8120129103B28008C86B2 /* UKitBridge.swift in Sources */,
 				AAD1E72B29102F60009ED629 /* SwiftUIViewControllersApp.swift in Sources */,
+				AAF8120329103BFA008C86B2 /* MiVistaProtocol.swift in Sources */,
+				AAF8121229104AF4008C86B2 /* MiVista.swift in Sources */,
+				AAF8120B29104676008C86B2 /* MiVistaBridge.swift in Sources */,
+				AAF811FE291038A5008C86B2 /* MiVistaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
